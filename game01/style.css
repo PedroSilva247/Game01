@@ -1,0 +1,57 @@
+.game {
+    width: 800px; height: 600px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.street {
+    border: 2px solid black;
+    position: absolute;
+    bottom: 80px;
+    width: 796px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cacto-img {
+    width: 90px;
+    position: absolute;
+    right: -90px; bottom: 80px;
+    animation: cacto 1.5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes cacto {
+    from {right: -90px;}
+    to {right: 800px;}
+}
+
+.bar {
+    width: 100px; height: 600px;
+    background-color: white;
+    position: absolute;
+    
+}
+.left-bar {
+    left: -101px;
+}
+.right-bar {
+    right: -101px;
+}
+.player {
+    width: 70px;
+    position: absolute;
+    bottom: 89px;
+    left: 100px;
+}
+@keyframes player-up {
+    from {bottom: 89px;}
+    to {bottom: 185px;}
+}
+@keyframes player-down {
+    from {bottom: 185px;}
+    to {bottom: 89px;}
+}
